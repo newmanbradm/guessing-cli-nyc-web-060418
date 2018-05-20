@@ -3,5 +3,8 @@ def run_guessing_game
   while input
   puts "Guess a number between 1 and 6."
   input = gets.chomp
-  computer
+  computer = rand(1..6).to_s
+    if input == computer
+      puts "You guessed the correct number!"
+    elsif  
 end
